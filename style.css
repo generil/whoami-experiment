@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+* {
+    font-family: 'SF UI Display', --apple-system, BlinkMacSystemFont, 'Roboto', "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: visible;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header {
+    height: 100%;
+}
+
+.rb {
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.title {
+    max-width: 100%;
+    padding: 100px;
+}
+
+.welcome {
+    margin: 0;
+    color: white;
+    font-weight: 900;
+    font-size: 10em;
+}
+
+.caption {
+    margin: 0;
+    padding: 25px 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 3em;
+}
+
+.value {
+    color: white;
+}
+
+.more-info {
+    margin: 0;
+}
+
+.info {
+    font-size: 2em;
+    padding: 2px 0;
+}
+
+.button {
+    background-color: #FFC528;
+    /*border: none;*/
+    border-radius: 100px;
+    font-size: 15px;
+    font-family: 'SF UI Display', --apple-system, BlinkMacSystemFont, 'Roboto', "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    /*color: #345995;*/
+    color: rgba(0,0,0,0.7);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    outline: 0;
+    margin: 25px 0;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#button1 {
+    font-family: 'SF UI Display', --apple-system, BlinkMacSystemFont, 'Roboto', "Segoe UI", Helvetica, Arial, sans-serif;
+    border: none;
+    color: rgba(0,0,0,0.7);
+}
+
+#bw {
+    font-family: 'SF UI Display', --apple-system, BlinkMacSystemFont, 'Roboto', "Segoe UI", Helvetica, Arial, sans-serif;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+#random {
+    font-family: 'SF UI Display', --apple-system, BlinkMacSystemFont, 'Roboto', "Segoe UI", Helvetica, Arial, sans-serif;
+    border: none;
+    background-color: black; /*change random colors*/
+    color: white;
+}
+
+#reset {
+    font-family: 'SF UI Display', --apple-system, BlinkMacSystemFont, 'Roboto', "Segoe UI", Helvetica, Arial, sans-serif;
+    border: none;
+    background-color: black; /*change random colors*/
+    color: rgba(0,0,0,0.7);
+}
+
+/*responsive*/
+
+@media only screen and (max-width: 768px) {
+    .title {
+        padding: 75px;
+    }
+
+    .welcome {
+        font-size: 8em;
+    }
+
+    .caption {
+        font-size: 2em;
+    }
+
+    .button {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        padding: 50px;
+    }
+
+    .welcome {
+        font-size: 5em;
+        text-align: center;
+    }
+
+    .caption {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .btn-group {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .title {
+        padding: 25px;
+    }
+}

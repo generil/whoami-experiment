@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Just a Simple Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js">
+        </script>
+    </head>
+    <body>
+        <div id="main" class="header">
+            <div class="title">
+                <p class="welcome txt">Hi.</p>
+                <p class="caption txt">Click the button if you want to know more about me.</p>
+                <div class="more-info" style="display: none;">
+                    <p class="caption info">Email: <span class="value">generild@gmail.com</span></p>
+                    <p class="caption info">Facebook: <span class="value">generildls</span></p>
+                    <p class="caption info">Github: <span class="value">generil</span></p>
+                    <p class="caption info">Phone: <span class="value">+63 928 175 4624</span></p>
+                    <p class="caption info">Address: <span class="value">Cebu, Philippines</span></p>
+                </div>
+                <div class="btn-group">
+                    <button class="button" id="button1" onclick="change()">CLICK HERE</button>
+                    <button class="button" id="bw" onclick="switchBW()" style='display: none;'>TO BLACK</button>
+                    <button class="button" id="random" onclick="switchRandom()" style='display: none;'>RANDOM</button>
+                    <button class="button rb" id="reset" onclick="reset()" style='display: none;'>RESET</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
